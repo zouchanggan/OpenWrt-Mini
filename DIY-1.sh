@@ -38,4 +38,3 @@ rm -rf feeds/luci/applications/luci-app-appfilter
 rm -rf feeds/luci/applications/luci-app-openclash
 rm -rf feeds/luci/applications/luci-app-lucky
 rm -rf feeds/luci/applications/luci-app-smartdns
-./scripts/feeds update -a && ./scripts/feeds install -a
