@@ -19,14 +19,16 @@ git clone https://github.com/WukongMaster/luci-theme-opentomcat.git package/luci
 
 # 6-添加外部软件源
 echo "src-git small https://github.com/zouchanggan/openwrt-packages.git;small" >> "feeds.conf.default"
+
+# 7-更新替换golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
-# 7-删除依赖(防止插件冲突，删除重复)
+# 8-删除依赖(防止插件冲突，删除重复)
 rm -rf feeds/packages/net/{lucky,alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
 rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 
-# 删除软件包(防止插件冲突，删除重复)
+# 9-删除软件包(防止插件冲突，删除重复)
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-ssr-plus
