@@ -39,3 +39,5 @@ rm -rf feeds/luci/applications/luci-app-ddns-go
 rm -rf feeds/luci/applications/luci-app-appfilter
 rm -rf feeds/luci/applications/luci-app-openclash
 rm -rf feeds/luci/applications/luci-app-lucky
+rm -rf feeds/luci/applications/luci-app-smartdns
+rm -rf feeds/packages/net/smartdns
