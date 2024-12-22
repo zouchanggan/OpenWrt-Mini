@@ -36,7 +36,7 @@ git clone https://github.com/WukongMaster/luci-app-poweroff.git package/luci-app
 git clone https://github.com/WukongMaster/luci-theme-opentomcat.git package/luci-theme-opentomcat
 
 # 4-添加 luci-theme-kucat 主题
-git clone https://github.com/sirpdboy/luci-theme-kucat.git package/luci-theme-kucat
+# git clone https://github.com/sirpdboy/luci-theme-kucat.git package/luci-theme-kucat
 
 # 5-添加 OpenClash 插件
 # sed -i '$a\src-git openclash https://github.com/vernesong/OpenClash' ./feeds.conf.default
@@ -49,9 +49,34 @@ git clone https://github.com/sirpdboy/luci-theme-kucat.git package/luci-theme-ku
 # echo "src-git small https://github.com/zouchanggan/openwrt-packages.git;small" >> "feeds.conf.default"
 
 # 8-删除依赖(防止插件冲突，删除重复)
-rm -rf feeds/packages/net/{lucky,alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns,dae,daed}
-rm -rf feeds/packages/utils/v2dat
+
+rm -rf feeds/packages/net/chinadns-ng 
+rm -rf feeds/packages/net/hysteria 
+rm -rf feeds/packages/net/mosdns
+rm -rf feeds/packages/net/shadowsocksr-libev
+rm -rf feeds/packages/net/shadowsocks-rust 
+rm -rf feeds/packages/net/shadowsocks-libev 
+rm -rf feeds/packages/net/tcping 
+rm -rf feeds/packages/net/trojan
+rm -rf feeds/packages/net/trojan-go
+rm -rf feeds/packages/net/trojan-plus
+rm -rf feeds/packages/net/tuic-client  
+rm -rf feeds/packages/net/v2raya
+rm -rf feeds/packages/net/v2ray-core  
+rm -rf feeds/packages/net/v2ray-plugin
+rm -rf feeds/packages/net/xray-core 
+rm -rf feeds/packages/net/xray-plugin
+rm -rf feeds/packages/net/v2ray-geodata
+rm -rf feeds/packages/net/open-app-filter
+rm -rf feeds/packages/net/gn
+rm -rf feeds/packages/net/smartdns
+rm -rf feeds/packages/net/adguardhome
+rm -rf feeds/packages/net/sing-box
+rm -rf feeds/packages/net/lucky
+rm -rf feeds/packages/net/dae
+rm -rf feeds/packages/net/daed
 rm -rf feeds/packages/lang/golang
+rm -rf feeds/packages/net/ddns-go
 
 # 9-更新替换golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
