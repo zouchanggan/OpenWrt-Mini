@@ -46,7 +46,7 @@ git clone https://github.com/WukongMaster/luci-theme-opentomcat.git package/luci
 # echo "src-git small https://github.com/zouchanggan/openwrt-packages.git;small" >> "feeds.conf.default"
 
 # 7-删除依赖(防止插件冲突，删除重复)
-rm -rf feeds/packages/net/{lucky,alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
+rm -rf feeds/packages/net/{lucky,alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns,dae,daed}
 rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 
@@ -64,6 +64,10 @@ rm -rf feeds/luci/applications/luci-app-appfilter
 rm -rf feeds/luci/applications/luci-app-openclash
 rm -rf feeds/luci/applications/luci-app-lucky
 rm -rf feeds/luci/applications/luci-app-smartdns
+rm -rf feeds/luci/applications/luci-app-dae
+rm -rf feeds/luci/applications/luci-app-daed
+rm -rf feeds/luci/applications/luci-app-v2raya
+rm -rf feeds/luci/applications/luci-app-v2ray-server
 
 # 10-更新feeds 
 ./scripts/feeds update -a && ./scripts/feeds install -a
