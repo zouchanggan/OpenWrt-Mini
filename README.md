@@ -16,7 +16,7 @@
 | ---- | ---- | ---- |
 | 192.168.2.1 | root | 无密码 |
 
-## 固件下载:   [Releases](https://github.com/WukongMaster/OpenWrt-Mini/releases) 
+## 固件下载:   [Releases](https://github.com/zouchanggan/OpenWrt-Mini/releases) 
 
 ## 固件截图
 
